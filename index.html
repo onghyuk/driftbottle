@@ -19,10 +19,79 @@
             
         }
         
+        iframe{
+            width: 80vw;
+            
+            
+        }
+        
         .head{
             position: fixed;
             left:2vw;
             top:0.5vh;
+            
+            z-index: 1;
+        }
+        
+        .body{
+            position: relative;
+            left: 1vw;
+            top: 10vh;
+        }
+        
+        .web1{
+            position: relative;
+            left: 0vw;
+            top: 0vh;
+            
+            margin-bottom: 30vh;
+            
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            
+            overflow: hidden;
+            
+            transition-property: width height;
+            transition-duration: 3s;
+            transition-delay: 0.5s; 
+        }
+        
+        .web1:hover{
+            width: 95vw;
+            height: 80vh;
+        }
+        
+        .web2{
+            position: relative;
+            left: 0vw;
+            top: 0vh;
+            
+            margin-bottom: 30vh;
+            
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            
+            overflow: hidden;
+            
+            transition-property: width height;
+            transition-duration: 3s;
+            transition-delay: 0.5s; 
+            
+            outline-style: dotted;
+            outline-width: 1px;
+            outline-color: white;
+        }
+        
+        .web2:hover{
+            width: 95vw;
+            height: 80vh;
+        }
+        
+        .slidingdoor{
+            width: 95vw;
+            height: 80vh; 
         }
     
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">        
@@ -36,15 +105,15 @@
        
        <div class="body">
            <div class="web1">
-               
+                  <iframe src="https://onghyuk.github.io/slidingdoor/" class="slidingdoor"></iframe>
            </div>
            
            <div class="web2">
-               
+                   <iframe src="https://onghyuk.github.io/web-exhibition/" class="slidingdoor" frameborder="0"></iframe>
            </div>
            
-           <div class="web3">
-               
+           <div class="web1">
+                   <iframe src="https://onghyuk.github.io/banner/" class="slidingdoor"></iframe>
             
            </div>
        </div>
